@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Fetch API</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+  <div class="container">
+    <h1 class="display-4 mb-4">Fetch API Example</h1>
+    <div class="d-flex">
+      <!-- Gets text from the sample.txt file using the Fetch API -->
+      <button class="btn btn-primary mr-4" id="getText">Get Text</button>
+      <!-- Gets data from the users.json file using the Fetch API -->
+      <button class="btn btn-success mr-4" id="getJson">Get JSON</button>
+      <!-- Gets data from the external api file using the Fetch API -->
+      <button class="btn btn-warning mr-4" id="getApiData">Get API Data</button>
+    </div>
+    <div>
+      <div class="jumbotron mt-5" id="output"><h4>Click the Get Text button to show text!</h4></div>
+      <div class="jumbotron mt-5" id="json-data"><h4>Click the Get JSON button to show user data!</h4></div>
+      <div class="jumbotron mt-5" id="api-data"><h4>Click the Get API Data button to show a list of posts from an external API!</h4></div>
+  </div>
+    <hr>
+    <form class="form" id="addPost">
+      <div class="form-group">
+        <input class="form-control" type="text" id="title" placeholder="Title">
+      </div>
+      <div>
+        <textarea class="form-control" id="body" placeholder="Enter body text here..."></textarea>
+      </div>
+      <button class="btn btn-secondary mt-3" type="submit">Add New Post</button>
+    </form>
+    <p class="text-warning">Logs new post to the console.</p>
+  </div>
+
+  <script src="index-es6.js"></script>
+</body>
+</html>
